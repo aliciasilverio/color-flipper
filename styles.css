@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans:wght@500&family=Roboto:wght@300&family=Rubik+Vinyl&display=swap');
+
+h2 {
+    font-size: 3rem;
+
+}
+
 nav {
     background: white;
     margin: 0;
     padding: 0;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
 }
 
 ul {
@@ -20,10 +30,11 @@ ul {
 
   .color-flipper{
     font-size: 2rem;
+    font-family: 'Rubik Vinyl', cursive;
+    color: black;
   }
 
   .simple{ 
-    padding-right: 25px;
     font-size: 2rem;
     text-decoration: none;
     color: black;
@@ -35,11 +46,77 @@ ul {
     text-decoration: none;
     color: black;
   }
+ 
 
-  .hex:focus {
-    color: lightblue;
+  .active {
+    color: #7aa7c7;
+    text-decoration: none;
+    text-shadow: 20px;
+    font-size: 2rem;
+    padding: 10px;
   }
-  .simple:focus {
-    color: lightblue;
+
+  main {
+    margin-top: 20%;
   }
+
+  /* main section */
+
+.container {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: dotted;
+}
+
+
+/* button */
+/* CSS */
+.btn {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.btn:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
 
