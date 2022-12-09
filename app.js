@@ -1,4 +1,4 @@
-const colors = ["green", "red", "yellow", "blue", "orange", "violet"]
+const colors = ["Green", "Red", "Yellow", "Blue", "Orange", "Violet"]
 
 const simpleClass = document.querySelector('.simple');
 const hexClass = document.querySelector('.hex');
@@ -6,9 +6,14 @@ const hexClass = document.querySelector('.hex');
 const btn = document.getElementById('btn');
 const color = document.querySelector(".color");
 
+function getRandomNumber(){
+    // randomizing the amount of items in the "colors" array
+    return Math.floor(Math.random() * colors.length);
+}
+
 // targeting the body
 btn.addEventListener('click', function(){
-    // getting random number between 0 and 3
+
     const randomNumber = getRandomNumber();
     console.log(randomNumber);
 
@@ -16,10 +21,6 @@ btn.addEventListener('click', function(){
     color.textContent = colors[randomNumber];
 });
 
-function getRandomNumber(){
-    // randomizing the amount of items in the "colors" array
-    return Math.floor(Math.random() * colors.length);
-}
 
 
 
